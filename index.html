@@ -80,18 +80,19 @@
   <!-- Forms -->
   <form action="action.js" method="POST">
     <div>
+      <!-- To associate the <label> with an <input> element in the above style, you need to give the <input> an id attribute. The <label> then needs a for attribute whose value is the same as the input's id.©MDN -->
       <label for="firstName">First Name</label>
-      <input type="text" placeholder="Enter first name">
+      <input type="text" id="firstName" pattern="[A-Za-z\s]+" minlength="2" placeholder="Enter first name" required>
     </div>
     <br>
     <div>
       <label for="lastName">Last name</label>
-      <input type="text" placeholder="Enter last name">
+      <input type="text" id="lastName" pattern="[A-Za-z\s]+" minlength="2" placeholder="Enter last name" required> 
     </div>
     <br>
     <div>
       <label for="email">Email</label>
-      <input type="email" placeholder="Enter email">
+      <input type="email" id="email" placeholder="Enter email" required>
     </div>
     <br>
     <div>
@@ -100,7 +101,7 @@
     </div>
     <br>
     <div>
-      <label for="genderLabel">Gender</label>
+      <label for="genderSelect">Gender</label>
       <select name="gender" id="genderSelect">
         <option value="male">Male</option>
         <option value="female">Female</option>
@@ -110,12 +111,12 @@
     <br>
     <div>
       <label for="age">Age</label>
-      <input type="number" value="30" min="15" max="115" step="1">
+      <input type="number" id="age" value="30" min="15" max="115" step="1">
     </div>
     <br>
     <div>
       <label for="birthday">Bithday</label>
-      <input type="date" min="1930-01-01" max="2009-12-31">
+      <input type="date" id="birthday" min="1930-01-01" max="2009-12-31">
     </div>
     <br>
       <input type="submit" name="submit" value="Submit">
@@ -126,6 +127,28 @@
 
   <!-- Buttons -->
   <button>Click Me</button>
+
+  <br><br>
+
+  <!-- Image -->
+  <div>
+    <a href="img/chuttersnap-1019339-unsplash.jpg">
+      <img src="img/chuttersnap-1019339-unsplash.jpg" alt="City biking" height="300px">
+    </a>
+  </div>
+
+  <!-- Quotations -->
+  <blockquote cite="http://google.com">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, officiis beatae rem at sequi quod!
+  </blockquote>
+
+  <p>The <abbr title="World Wide Wed">WWW</abbr>  is awesome.</p>
+
+  <p> <cite>HTML crash course</cite> by Brad Traversy</p>
+
+
+
+
 
   <!-- div which moves the end of the content in the middle of the page -->
   <div style="margin-top: 500px;"></div>
